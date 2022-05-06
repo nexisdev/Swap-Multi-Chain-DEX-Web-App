@@ -37,7 +37,7 @@ const styles = {
     marginTop: "130px",
     padding: "10px",
     backgroundImage: "url(${background})",
-    background: "rgb(12, 14, 27",
+    background: "rgb(12, 14, 27)",
     backgroundSize: "fill",
   },
   header: {
@@ -52,7 +52,7 @@ const styles = {
     padding: "0 10px",
     boxShadow: "0 1px 10px rgb(151 164 175 / 10%)",
     backgroundImage: "url(${background})",
-    background: "rgb(12, 14, 27",
+    background: "rgb(12, 14, 27)",
     backgroundSize: "fill",
   },
   headerRight: {
