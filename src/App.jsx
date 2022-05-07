@@ -26,7 +26,11 @@ import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
 const { Header, Footer } = Layout;
 import LogoName from "components/logo1.png";
-import background from "components/svg0.png";
+import Bg from "components/Bg.png";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import YouTubeIcon from "@material-ui/icons/YouTube";
+import InstagramIcon from "@material-ui/icons/Instagram";
 
 const styles = {
   content: {
@@ -36,7 +40,8 @@ const styles = {
     color: "#041836",
     marginTop: "130px",
     padding: "10px",
-    backgroundImage: "url(${background})",
+    backgroundImage:
+      "url('https://exzonetwork.mypinata.cloud/ipfs/QmVsXqYj2F1oMtvK9Z6HbGRmmaeeNQ4XGS7DhiS3pk8tbs')",
     background: "rgb(12, 14, 27)",
     backgroundSize: "fill",
   },
@@ -61,6 +66,12 @@ const styles = {
     alignItems: "center",
     fontSize: "15px",
     fontWeight: "600",
+  },
+  socialMedias: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center",
   },
 };
 const App = ({ isServerInfo }) => {
@@ -110,6 +121,14 @@ const App = ({ isServerInfo }) => {
                           "https://bscscan.com/token/images/exzocoin2_32.png",
                         name: "ExzoCoin 2.0",
                         symbol: "EXZO",
+                      },
+                      "0x7a5d3A9Dcd33cb8D527f7b5F96EB4Fef43d55636": {
+                        address: "0x7a5d3A9Dcd33cb8D527f7b5F96EB4Fef43d55636",
+                        decimals: 18,
+                        logoURI:
+                          "https://s2.coinmarketcap.com/static/img/coins/64x64/19006.png",
+                        name: "RadioShack",
+                        symbol: "RADIO",
                       },
                       "0xdAC17F958D2ee523a2206206994597C13D831ec7": {
                         address: "0xdAC17F958D2ee523a2206206994597C13D831ec7",
@@ -268,6 +287,14 @@ const App = ({ isServerInfo }) => {
                         name: "StarShip",
                         symbol: "STARSHIP",
                       },
+                      "0x30807D3b851A31d62415B8bb7Af7dCa59390434a": {
+                        address: "0x30807D3b851A31d62415B8bb7Af7dCa59390434a",
+                        decimals: 18,
+                        logoURI:
+                          "https://s2.coinmarketcap.com/static/img/coins/64x64/19006.png",
+                        name: "RadioShack",
+                        symbol: "RADIO",
+                      },
                       "0x1ce0c2827e2ef14d5c4f29a091d735a204794041": {
                         address: "0x1ce0c2827e2ef14d5c4f29a091d735a204794041",
                         decimals: 18,
@@ -290,6 +317,14 @@ const App = ({ isServerInfo }) => {
                         name: "ExzoCoin 2.0",
                         symbol: "EXZO",
                       },
+                      "0x613a489785C95afEB3b404CC41565cCff107B6E0": {
+                        address: "0x613a489785C95afEB3b404CC41565cCff107B6E0",
+                        decimals: 18,
+                        logoURI:
+                          "https://s2.coinmarketcap.com/static/img/coins/64x64/19006.png",
+                        name: "RadioShack",
+                        symbol: "RADIO",
+                      },
                     }}
                   />
                 </Tabs.TabPane>
@@ -304,6 +339,14 @@ const App = ({ isServerInfo }) => {
                         logoURI: "https://bscscan.com/token/images/avax_32.png",
                         name: "Avalanche Token",
                         symbol: "AVAX",
+                      },
+                      "0x02Bfd11499847003De5f0F5AA081C43854d48815": {
+                        address: "0x02Bfd11499847003De5f0F5AA081C43854d48815",
+                        decimals: 18,
+                        logoURI:
+                          "https://s2.coinmarketcap.com/static/img/coins/64x64/19006.png",
+                        name: "RadioShack",
+                        symbol: "RADIO",
                       },
                       "0x5947bb275c521040051d82396192181b413227a3": {
                         address: "0x5947bb275c521040051d82396192181b413227a3",
@@ -353,7 +396,14 @@ const App = ({ isServerInfo }) => {
           </Switch>
         </div>
       </Router>
-      <Footer style={{ textAlign: "center" }}></Footer>
+      <Footer style={{ textAlign: "center" }}>
+        <socialMedias>
+          <TwitterIcon />
+          <FacebookIcon />
+          <YouTubeIcon />
+          <InstagramIcon />
+        </socialMedias>
+      </Footer>
     </Layout>
   );
 };
