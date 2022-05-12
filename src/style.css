@@ -9,6 +9,16 @@
   border-bottom: 2px solid rgba(35, 38, 223, 1) !important;
 }
 
+.ant-modal-body {
+  background:rgb(18, 20, 38) !important;
+  color:#EDF1F9 !important;
+  border: none !important;
+}
+
+.ant-modal-close-icon {
+  color:#EDF1F9 !important;
+}
+
 .ant-menu-horizontal > .ant-menu-item-selected a,
 .ant-menu-horizontal > .ant-menu-item a:hover {
   color: rgba(35, 38, 223, 1) !important;
