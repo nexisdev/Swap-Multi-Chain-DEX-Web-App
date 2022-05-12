@@ -11,8 +11,9 @@ const styles = {
     height: "36px",
     display: "flex",
     gap: "5px",
-    backgroundColor: "rgba(255, 255, 255, 0.1)",
-    borderRadius: "9px",
+    backgroundColor: "#EDF1F9",
+    borderRadius: "14px",
+    paddingLeft: "10px",
     alignItems: "center",
   },
 };

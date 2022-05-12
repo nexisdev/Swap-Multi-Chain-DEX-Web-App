@@ -11,16 +11,14 @@ function MenuItems() {
       mode="horizontal"
       style={{
         display: "flex",
-        fontSize: "17px",
-        fontWeight: "500",
+        fontSize: "14px",
+        fontWeight: "400",
         width: "100%",
-        justifyContent: "center",
+        justifyContent: "left",
+        position: "left",
       }}
       defaultSelectedKeys={[pathname]}
     >
-      <Menu.Item key="/wallet">
-        <NavLink to="/wallet">Wallet</NavLink>
-      </Menu.Item>
       <Menu.Item key="/1inch">
         <NavLink to="/1inch">Swap</NavLink>
       </Menu.Item>
@@ -35,9 +33,6 @@ function MenuItems() {
       </Menu.Item>
       <Menu.Item key="/nftBalance">
         <NavLink to="/nftBalance">NFTs</NavLink>
-      </Menu.Item>
-      <Menu.Item key="/contract">
-        <NavLink to="/contract">Contract</NavLink>
       </Menu.Item>
     </Menu>
   );

@@ -27,10 +27,6 @@ import MenuItems from "./components/MenuItems";
 const { Header, Footer } = Layout;
 import LogoName from "components/logo1.png";
 import Bg from "components/Bg.png";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import YouTubeIcon from "@material-ui/icons/YouTube";
-import InstagramIcon from "@material-ui/icons/Instagram";
 
 const styles = {
   content: {
@@ -40,10 +36,6 @@ const styles = {
     color: "#041836",
     marginTop: "130px",
     padding: "10px",
-    backgroundImage:
-      "url('https://exzonetwork.mypinata.cloud/ipfs/QmVsXqYj2F1oMtvK9Z6HbGRmmaeeNQ4XGS7DhiS3pk8tbs')",
-    background: "rgb(12, 14, 27)",
-    backgroundSize: "fill",
   },
   header: {
     position: "fixed",
@@ -67,12 +59,6 @@ const styles = {
     fontSize: "15px",
     fontWeight: "600",
   },
-  socialMedias: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    alignContent: "center",
-  },
 };
 const App = ({ isServerInfo }) => {
   const { isWeb3Enabled, enableWeb3, isAuthenticated, isWeb3EnableLoading } =
@@ -95,19 +81,15 @@ const App = ({ isServerInfo }) => {
             <Chains />
             <TokenPrice
               image="https://exzonetwork.mypinata.cloud/ipfs/QmVfkWAzVmc9D6Z8M4Vk5x5ffuLtJU4zwZUhSmXYTEj7dE"
-              size="50px"
+              size="75px"
               margin="10px"
             />
-            <NativeBalance />
             <Account />
           </div>
         </Header>
 
         <div style={styles.content}>
           <Switch>
-            <Route path="/wallet">
-              <Wallet />
-            </Route>
             <Route path="/1inch">
               <Tabs defaultActiveKey="1" style={{ alignItems: "center" }}>
                 <Tabs.TabPane tab={<span>ETH</span>} key="1">
@@ -381,9 +363,6 @@ const App = ({ isServerInfo }) => {
             <Route path="/nftBalance">
               <NFTBalance />
             </Route>
-            <Route path="/contract">
-              <Contract />
-            </Route>
             <Route path="/">
               <Redirect to="/1inch" />
             </Route>
@@ -396,14 +375,7 @@ const App = ({ isServerInfo }) => {
           </Switch>
         </div>
       </Router>
-      <Footer style={{ textAlign: "center" }}>
-        <socialMedias>
-          <TwitterIcon />
-          <FacebookIcon />
-          <YouTubeIcon />
-          <InstagramIcon />
-        </socialMedias>
-      </Footer>
+      <Footer style={{ textAlign: "center" }}></Footer>
     </Layout>
   );
 };
